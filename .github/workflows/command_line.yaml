@@ -19,6 +19,7 @@ jobs:
           python3 -m venv venv
           source venv/bin/activate
           pip3 install .
+          pip install --upgrade pip
           cowsay 'moo'
           # everything that we put in here is a terminal command
           # the behavior on github actions will be basically the same
