@@ -16,6 +16,8 @@ jobs:
           python-version: ${{matrix.python}}
       - name: Run tests
         run: |
+          python3 -m venv venv
+          source venv/bin/activate
           pip3 install .
           cowsay 'moo'
           # everything that we put in here is a terminal command
