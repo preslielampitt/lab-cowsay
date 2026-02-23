@@ -16,6 +16,7 @@ jobs:
           python-version: ${{matrix.python}}
       - name: Run tests
         run: |
+          pip3 install .
           cowsay 'moo'
           # everything that we put in here is a terminal command
           # the behavior on github actions will be basically the same
