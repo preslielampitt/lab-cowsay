@@ -16,8 +16,6 @@ jobs:
           python-version: ${{matrix.python}}
       - name: Run tests
         run: |
-          python3 -m venv venv
-          source venv/bin/activate
           pip3 install .
           pip install --upgrade pip
           cowsay 'moo'
